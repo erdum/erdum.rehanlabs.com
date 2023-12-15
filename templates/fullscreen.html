@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Full Screen Image</title>
+    <style>
+        /* Set margin and padding to 0 for the body and HTML elements */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        /* Set the background image to cover the entire screen */
+        img {
+            width: 600px;
+            height: 300px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='palestine.png') }}">
+</body>
+</html>
+
